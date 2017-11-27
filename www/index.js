@@ -57,6 +57,7 @@ function accelerometerError() {
 
 function updateFreq(freq) {
 	accelerometerOptions.frequency = freq;
+    watchID = navigator.accelerometer.watchAcceleration( accelerometerSuccess, accelerometerError, accelerometerOptions);
 }
 
 
